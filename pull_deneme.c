@@ -1,0 +1,2 @@
+ bakalım bu çalkışacak mı
+ 
