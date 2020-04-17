@@ -1,0 +1,89 @@
+git init 		: Repo başlatır
+
+git status 		: Repo durum bilgisi
+git add <file> 		: Track listesine dosya ekleme  (. tümü) (staging areaya)
+git rm --cached <file> 	: Track listesinden dosya silme (. tümü)
+
+git log			: Kayıtlar
+git log --oneline	: Tek satır şeklinde kayıtlar
+git reset <id> --hard	: Tüm dosyalar id de belirtilen versiyona döner
+git reset <id> --soft	: Sadece commiti geri alır dosya değişiklikleri korunur
+git revert <id>		: id verilen commit değişikliklerini geri alır
+
+git commit <file>	: Text editör ile commit
+y -m "Commit"	: Tek komutla commit
+git commit --amend -m "commit" 	: Commit yorumunu düzenleme
+git commit --amend 		: Yapılan değiliklikleri bir önceki commite ekler
+
+git branch <branchadi>		: Yeni branch oluşturur
+git branch -a			: Baranchleri listeler
+
+git checkout <branchadi>	: İstenilen branche geçer
+
+git checkout -b <branchadi>	: Yeni branch oluşturarak geçiş yapar
+
+git branch -d <branchadi>	: Branch siler (birleştirme yapılmadıysa silmez)
+git branch -D <branchadi>	: Branch silmeye zorlar
+git merge <branchadi>		: Belirtilen branchi mevcut ile birleştirir
+
+git mk <oldname> <newname>	: Dosya isim değiştirme
+git push <link> <branch>	: Belirtilen linke belirtilen branchı gönderir
+git pull <link>			: Belirtilen linkteki repoyu indirir
+
+git remote add <name> <link>	: Linke <name> isminde kısayol oluşturur (standart olarak origin kısayolu oluşturulur)
+git remote -v			: Kısayolları listeler
+
+git fetch <dir/shortcut>	: Uzaktaki yapılan değişiklikleri bilgisayara getirir
+git merge <dir>/<branch>	: Fetch ile getirilen branchi birleştirir (hem localde hemde uzakta yapılan değişiklik durumunda kullanılır.)
+git pull <dir> <branch>		: Uzaktaki repoyu bilgisayara alır
+
+git stash "Yorum"		: Mevcut durumu stash e kaydeder
+git stash list			: Mevcut stashleri listeler
+git stash -p <stash_no>		: Stash'de yapılan değişiklikleri gösterir (Son stash id :0 )
+git stash drop			: Son stashi temizler
+git stash pop			: Son stashi repoya alır.
+git stash pop <id>		: Id verilen stashi repoya alır.
+
+git config --global alias.<kisaad> 'İşlenecek komut/lar' : İstenen komut/lara kısayol atar
+
+terimler;
+commit		: değişikliği yorumlamak/açıklamak
+branch		: dal / projenin bir aşamada bölünmesi dallanması
+fork		: Başka bir projeyi kendi alanımıza alarak orada değişikliklere devam edebilme
+pull request 	: Başka birinin projesinde düzenleme yaparak onun onayına sunma
+mirroring	: Başka bir git uygulaması ile bağlama
+fetch		: çalışma alanımıza uzak repoyu komple getirir ve referans olarak kaydeder
+pull		: aradaki farkları anlar farkları indirir
+.gitignore	: Gizlenmesini istediğimiz dosyaları belirler, başına ! koyduğumuz dosyalar gösterilir
+
+stash		: Bir dosyayı değiştirmeyi bitirmeden onu beklemeye alarak onu cimmit etmeden başka doslayarı commit etmeye yarar.
+
+Readme Syntax;
+
+
+#   1. Header
+##  2. Header
+**bold**
+_italic_
+**bold _italic_**
+~~üstü çizili~~
+*** all bold & italic ***
+>Alıntı
+'tek satır alıntı kod'
+
+'''çoklu
+satır
+kod
+alıntı'''
+
+[Bağlantı Adı](bağlantı url)
+
+
+
+
+
+
+
+
+
+
