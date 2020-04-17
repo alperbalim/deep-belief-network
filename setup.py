@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#yorum satırı
 from distutils.core import setup
 
 with open('requirements.txt') as fp:
